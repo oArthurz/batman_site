@@ -1,0 +1,187 @@
+@use '_variaveis.scss';
+@use '_hero.scss';
+@use '_header.scss';
+@use '_sobre.scss';
+@use '_shows.scss';
+@use '_footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+*
+{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body
+{
+    background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px)
+{
+    font-size: $fontSize;
+    line-height: $fontSize + 10px; 
+    color: variaveis.$corTextoPrincipal;
+}
+
+.text--big
+{
+    @include text(18px)
+}
+
+.text
+{
+    @include text()
+}
+
+.text--small
+{
+    color: variaveis.$corTextoPrincipal;
+    @include text(12px)
+}
+
+
+
+@mixin title($fontSize: 40px)
+{
+    @include text($fontSize);
+    color: variaveis.$corTextoSecundario;
+}
+
+.title--big
+{
+    @include title(44px);
+}
+
+.title--small
+{
+    @include title(28px);
+}
+
+
+.title
+{
+    @include title(40px);
+}
+
+.link--text
+{
+    @include text(18px);
+    color: variaveis.$corTextoSecundario;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px)
+{
+    *
+    {
+        margin: 0;
+        width: 100%;
+    }
+    .nav
+    {
+        width: 100%;
+    }
+
+    .hero
+    {
+        background-image: url(../images/hero_mobile.jpg);
+        width: 100%;
+    }
+   .sobre
+   {
+        display: block;
+
+        img
+        {
+            height: 600px;
+            margin: 0;
+            padding: 20px;
+        }
+    
+        &__descriptions
+        {
+            .tituloh1
+            {
+                font-size: 70px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .tituloh2
+            {
+                font-size: 14px;
+                margin-left: 23px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 0;
+            }
+            p
+            {
+                margin-left: 30px;
+                font-size: 30px;
+                width: 170%;
+                line-height: 40px;
+            }
+        }
+    }
+    .shows
+    {
+        &__list
+        {
+            grid-template-columns: 1fr;
+            p:last-child
+            {
+                line-height: 40px;
+            }
+
+            &__games
+            {
+                grid-template-columns: 1fr;
+                margin: 0;
+                padding-right: 80px;
+                li
+                {
+                    max-width: 350px;
+                    width: 100%;
+                    .plataformas
+                    {
+                        margin-left: 50px;
+                    }
+                    
+                    .imageGame
+                    {
+                        height: 250px;
+                    }
+                }
+            }
+
+            &__figs
+            {
+                grid-template-columns: 1fr;
+                width: 75%;
+                li
+                {
+                    padding: 50px;
+                    height: 500px;
+                    img
+                    {
+                        height: 230px;
+                    }
+
+                    .descFigs
+                    {
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+

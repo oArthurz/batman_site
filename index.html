@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batman - Site</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header class="nav">
+        <div class="nav__container">
+            <img src="./src/images/logo_branco.png" alt="">
+            <ul class="nav__container__list">
+                
+                <a href="#" class="nav__container__list__item--is-active">
+                    Assinar
+                </a>
+                    
+                <a href="#" class="nav__container__list__item">
+                    Entrar
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        
+    </section>
+
+    <section class="sobre">
+        <img src="./src/images/img_sobre.avif" alt="">
+        <div class="sobre__descriptions">
+            <h1 class="title--big tituloh1">Sobre</h1>
+            <h2 class="title--small tituloh2">Personagem Oficial | DC COMICS</h2>
+            <p class="text--big">
+                Um dos personagens fictícios mais icônicos do mundo, Batman dedicou sua vida a uma cruzada incessante, uma guerra contra todos os criminosos em nome de seus pais assassinados, que lhe foram tirados quando ainda era criança. Desde aquela noite trágica, ele treinou seu corpo e mente até atingir a quase perfeição física para se tornar um super-herói por conta própria. Ele desenvolveu um arsenal tecnológico que envergonharia a maioria dos exércitos. E reuniu equipes com outros super-heróis da DC, como a Liga da Justiça, os Renegados e a Batman Incorporated.
+                <br>
+                <br>
+                Durante o dia, Bruce Wayne é um bilionário playboy, mas sua vida dupla lhe proporciona o conforto de uma existência sem preocupações financeiras, um mordomo leal que se tornou seu guardião e a base de operações perfeita na antiga rede de cavernas sob a vasta propriedade de sua família. À noite, porém, ele abandona toda a pretensão, veste sua icônica capa recortada e capuz pontiagudo e sai pelas ruas, céus e telhados sombrios de Gotham City.
+            </p>
+        </div>
+    </section>
+
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="filmes_home" class="shows__tabs__button shows__tabs__button--is-active">
+                Filmes
+            </button>
+
+            <button data-tab-button="jogos_home" class="shows__tabs__button">
+                Jogos
+            </button>  
+
+            <button data-tab-button="action_figures_home" class="shows__tabs__button">
+                Action
+            </button>
+        </nav>
+        <ul data-tab-id="filmes_home" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <img src="./src/images/shows/movies/film1.webp" alt="Batman">
+                <p class="title">Batman: O Cavaleiro das Trevas</p>
+                <p class="text--big">
+                    Enfrentando o Coringa, um vilão caótico que desafia a ordem de Gotham e testa os limites morais do Batman. Com a ajuda de Harvey Dent e do Comissário Gordon, ele luta para manter a esperança da cidade enquanto lida com sacrifícios e escolhas difíceis.
+                </p>
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./src/images/shows/movies/film2.webp" alt="Batman">
+                <p class="title">The Batman</p>
+                <p class="text--big">
+                    Bruce Wayne mais jovem e detetive, investigando uma série de crimes do Charada que expõem a corrupção em Gotham. Enquanto desvenda os mistérios, Batman enfrenta seus próprios limites e passa a entender seu papel não só como símbolo de medo, mas também de esperança para a cidade.
+                </p>
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./src/images/shows/movies/film3.webp" alt="Batman">
+                <p class="title">Batman vs Superman</p>
+                <p class="text--big">
+                    Confronto entre Batman e Superman após a destruição causada por Superman em Metrópolis. Enquanto Batman vê o herói como uma ameaça, Lex Luthor manipula os dois para que entrem em conflito. No fim, eles se unem para enfrentar uma ameaça maior, abrindo caminho para a formação da Liga da Justiça.
+                </p>
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./src/images/shows/movies/film4.webp" alt="Batman">
+                <p class="title">Batman: O Retorno</p>
+                <p class="text--big">
+                    Batman enfrenta o vilão Pinguim, que tenta dominar Gotham com a ajuda do empresário Max Shreck, enquanto a enigmática Mulher-Gato surge dividida entre aliada e ameaça. Em meio ao caos, Batman lida com intrigas, identidade e o lado mais sombrio da cidade.
+                </p>
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./src/images/shows/movies/film5.webp" alt="Batman">
+                <p class="title">Batman Begins</p>
+                <p class="text--big">
+                    Mostra a origem de Bruce Wayne, desde seu treinamento para combater o crime até sua decisão de se tornar o Batman. Ao retornar a Gotham, ele enfrenta a Liga das Sombras e o vilão Ra’s al Ghul, buscando salvar a cidade enquanto constrói o símbolo do herói que inspira medo nos criminosos e esperança nos cidadãos.
+                </p>
+            </li>
+
+            <li class="shows__list__item">
+                <img src="./src/images/shows/movies/flim6.webp" alt="Batman">
+                <p class="title">Batman: O Cavaleiro das Trevas Ressurge</p>
+                <p class="text--big">
+                    O Retorno de Bruce Wayne após anos afastado, quando Gotham é ameaçada pelo implacável Bane. Enfrentando limites físicos e emocionais, Batman luta para salvar a cidade de um colapso total e concluir sua jornada como símbolo de esperança.
+                </p>
+            </li>
+        </ul>
+
+        <ul data-tab-id="jogos_home" class="shows__list">
+            <div class="shows__list__games">
+            <li class="shows__list__item">
+                <img class="imageGame" src="./src/images/shows/games/game1.jpeg" alt="Batman">
+                <p class="title">Batman: Arkham City</p>
+                <div class="plataformas">
+                    <img src="./src/images/icons/playstation.svg" alt="">
+                    <img src="./src/images/icons/xbox.svg" alt="">
+                    <img src="./src/images/icons/steam.svg" alt="">
+                </div>
+                <button class="shows__list__item__button">Jogar Agora</button>
+            </li>
+
+            <li class="shows__list__item">
+                <img class="imageGame" src="./src/images/shows/games/game2.jpeg" alt="Batman">
+                <p class="title">Batman: Arkham Asylum</p>
+                <div class="plataformas">
+                    <img src="./src/images/icons/playstation.svg" alt="">
+                    <img src="./src/images/icons/xbox.svg" alt="">
+                    <img src="./src/images/icons/steam.svg" alt="">
+                </div>
+                <button class="shows__list__item__button">Jogar Agora</button>
+            </li>
+
+            <li class="shows__list__item">
+                <img class="imageGame" src="./src/images/shows/games/game3.jpeg" alt="Batman">
+                <p class="title">Batmam: Arkham Knight</p>
+                <div class="plataformas">
+                    <img src="./src/images/icons/playstation.svg" alt="">
+                    <img src="./src/images/icons/xbox.svg" alt="">
+                    <img src="./src/images/icons/steam.svg" alt="">
+                </div>
+                <button class="shows__list__item__button">Jogar Agora</button>
+            </li>
+
+            <li class="shows__list__item">
+                <img class="imageGame" src="./src/images/shows/games/game4.jpeg" alt="Batman">
+                <p class="title">Batman: Arkham Origins</p>
+                <div class="plataformas">
+                    <img src="./src/images/icons/playstation.svg" alt="">
+                    <img src="./src/images/icons/xbox.svg" alt="">
+                    <img src="./src/images/icons/steam.svg" alt="">
+                </div>
+                <button class="shows__list__item__button">Jogar Agora</button>
+            </li>
+            </div>
+        </ul>
+        
+        <ul data-tab-id="action_figures_home" class="shows__list">
+            <div class="shows__list__figs">
+                <li class="shows__list__item">
+                    <img src="./src/images/shows/action figures/fig1.jpg" alt="Batman detetive">
+                    <p class="descFigs">Batman McFerlane</p>    
+                    <p class="price">R$ 299,00</p>
+                    <p>até 10x de 29,90 sem juros</p>
+                    <button>Quero Este</button>
+                </li>
+
+                <li class="shows__list__item">
+                    <img src="./src/images/shows/action figures/fig2.jpg" alt="Batman armadura">
+                    <p class="descFigs">Batman Armored</p>
+                    <p class="price">R$ 499,00</p>
+                    <p>até 10x de 29,90 sem juros</p>
+                    <button>Quero Este</button>
+                </li>
+
+                <li class="shows__list__item">
+                    <img src="./src/images/shows/action figures/fig3.jpg" alt="Charada">
+                    <p class="descFigs">The Riddler</p>
+                    <p class="price">R$ 299,00</p>
+                    <p>até 10x de 29,90 sem juros</p>
+                    <button>Quero Este</button>
+                </li>
+
+                <li class="shows__list__item">
+                    <img src="./src/images/shows/action figures/fig4.jpg" alt="Batman Dourado">
+                    <p class="descFigs">Batman 1989</p>
+                    <p class="price">R$ 299,00</p>
+                    <p>até 10x de 29,90 sem juros</p>
+                    <button>Quero Este</button>
+                </li>
+
+                <li class="shows__list__item">
+                    <img src="./src/images/shows/action figures/fig5.jpg" alt="Batman Vermelho">
+                    <p class="descFigs">Batman Platinum</p>
+                    <p class="price">R$ 299,00</p>
+                    <p>até 10x de 29,90 sem juros</p>
+                    <button>Quero Este</button>
+                </li>
+
+                <li class="shows__list__item">
+                    <img src="./src/images/shows/action figures/fig6.jpg" alt="Pinguim">
+                    <p class="descFigs">Penguin</p>
+                    <p class="price">R$ 399,00</p>
+                    <p>até 10x de 29,90 sem juros</p>
+                    <button>Quero Este</button>
+                </li>
+            </div>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <img src="./src/images/logo_branco.png" alt="Logo branco Batman">
+        <ul class="footer__links">
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Termos e Condições de Uso.</a>
+            </li>
+
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Polítia de Privacidade.</a>
+            </li>
+                    
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Proteção de Dados no Brasil.</a>
+            </li>
+
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Anúncios personalizados.</a>
+            </li>
+
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Dispositivos compatíveis.</a>
+            </li>
+                    
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Ajuda.</a>
+            </li>
+                    
+            <li class="footer__links__item">
+                <a href="#" class="text--small">Sobre o Disney+.</a>
+            </li>
+        </ul>
+        <p class="text--big">© 2026 Todos os direitos reservados, - Arthur Leite</p> 
+    </footer>
+        <script src="./src/main.js"></script>
+    </body>
+</html>

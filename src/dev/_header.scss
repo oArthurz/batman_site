@@ -1,0 +1,65 @@
+@use '_variaveis.scss';
+
+
+.nav
+{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #000000;
+    opacity: .9;
+    
+    &__container
+    {
+        display: flex;
+        background-color: #0000;
+        justify-content: space-between;
+        align-items: center;
+        
+        &__list
+        {
+            margin: 0 50px;
+            display: flex;
+            gap: 15px;
+            letter-spacing: 2px;
+            
+            
+            &__item
+            {
+                color: variaveis.$corDeFundo;
+                background-color: variaveis.$corBatman2;
+                text-decoration: none;
+                cursor: pointer;
+                padding: 5px;
+                border-radius: 4px;
+                width: 100px;
+                text-align: center;
+                font-size: 20px;
+                border: none;
+                opacity: .9;
+
+                &--is-active
+                {
+                    font-size: 20px;
+                    color: variaveis.$corDeFundo;
+                    padding: 5px;
+                    border-radius: 4px;
+                    background-color: variaveis.$corBatman2;
+                    border: none;
+                    width: 100px;
+                    text-align: center;
+                    text-decoration: none;
+                    opacity: .9;
+                }
+            }
+            
+        }
+
+        img
+        {
+            height: 90px;
+            margin: 15px 0 0 25px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@use 'variaveis.scss';
+
+.sobre
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-bottom: 100px;
+
+    &__descriptions
+    {
+        max-width: 50%;
+        width: 100%;
+        margin: 0;
+
+        h1
+        {
+            font-size: 90px;
+            margin-bottom: 40px;
+            color: variaveis.$corBatman1;
+        }
+
+        h2
+        {
+            font-size: 50px;
+            margin-bottom: 40px;
+            color: variaveis.$corBatman1;
+        }
+
+        p
+        {
+            color: variaveis.$corTextoPrincipal;
+            font-size: 30px;
+            
+        }
+    }
+
+    img
+    {
+        margin: 0px 120px 0 5%;
+        height: 900px;
+        border-radius: 7px;
+    }
+
+}
