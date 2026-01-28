@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function()
 {
     const buttons = document.querySelectorAll('[data-tab-button]')
     
-    for(let i = 0; i < buttons.length; i++)
+    for (let i = 0; i < buttons.length; i++)
         {
             buttons[i].addEventListener('click', function(botao)
             {
@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', function()
         }
     })
     
-
 function removeBotaoAtivo()
 {
     const buttons = document.querySelectorAll('[data-tab-button]')
@@ -36,3 +35,25 @@ function escondeTodasAbas()
             tabsContainer[i].classList.remove('shows__list--is-active')
         }
 }
+
+    const links1 = document.getElementById('fuiClicado1')
+    const links2= document.getElementById('fuiClicado2')
+
+    links1.addEventListener('click', function()
+    {
+        alert("Calma lá! kkkkkkk Esse site é meramente ilustrativo, foi criado com propósito somente de aprendizagem.")
+    })
+
+    links2.addEventListener('click', function()
+    {
+        alert("Calma lá! kkkkkkk Esse site é meramente ilustrativo, foi criado com propósito somente de aprendizagem.")
+    })
+
+$(document).ready(function()
+{
+    $('.slides').slick(
+        {
+            autoplay: true,
+            arrows: false
+        })
+})
