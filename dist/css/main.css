@@ -193,19 +193,20 @@
   text-align: center;
   margin-top: 40px;
   gap: 90px;
-  margin-left: 24%;
+  margin-left: 23%;
 }
 .shows__list__figs li {
   margin-bottom: 15px;
-}
-.shows__list__figs li:hover {
-  box-shadow: 0 0 60px #4c3999;
-}
-.shows__list__figs li {
   border: transparent;
   border-radius: 15px;
   background-color: white;
   text-align: center;
+}
+.shows__list__figs li img {
+  border-radius: 15px;
+}
+.shows__list__figs li:hover {
+  box-shadow: 0 0 60px #4c3999;
 }
 .shows__list__figs li p {
   color: #000;

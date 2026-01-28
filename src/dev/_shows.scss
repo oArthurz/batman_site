@@ -134,19 +134,26 @@
             text-align: center;
             margin-top: 40px;
             gap: 90px;
-            margin-left: 24%;
+            margin-left: 23%;
+
             li
             {
                 margin-bottom: 15px;
+                border: transparent;
+                border-radius: 15px;
+                background-color: variaveis.$corDeFundoBotao;
+                text-align: center;
+
+                img
+                {
+                    border-radius: 15px;
+                }
+
                 &:hover
                 {
                     box-shadow: 0 0 60px variaveis.$cordeFundoBotaoFigs;
                 }
                 
-                border: transparent;
-                border-radius: 15px;
-                background-color: variaveis.$corDeFundoBotao;
-                text-align: center;
                 
                 p
                 {
