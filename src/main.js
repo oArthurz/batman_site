@@ -46,7 +46,7 @@ function escondeTodasAbas()
 
     links2.addEventListener('click', function()
     {
-        alert("Calma lá! kkkkkkk Esse site é meramente ilustrativo, foi criado com propósito somente de aprendizagem.")
+        alert("Ja falei po! kkkkkkkkkk um dia eu desenvolvo esse projeto oficialmente pra DC.")
     })
 
 $(document).ready(function()
