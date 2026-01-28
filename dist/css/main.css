@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-.hero {
-  height: 500px;
-  background-image: url(../images/hero_desktop.jpg);
-  background-repeat: no-repeat;
+.hero img {
+  width: 100%;
 }
 
 .nav {
@@ -27,7 +25,7 @@
 }
 .nav__container__list__item {
   color: #000;
-  background-color: #fccb51;
+  background-color: #ccc;
   text-decoration: none;
   cursor: pointer;
   padding: 5px;
@@ -43,7 +41,7 @@
   color: #000;
   padding: 5px;
   border-radius: 4px;
-  background-color: #fccb51;
+  background-color: #ccc;
   border: none;
   width: 100px;
   text-align: center;
@@ -52,7 +50,8 @@
 }
 .nav__container img {
   height: 90px;
-  margin: 15px 0 0 25px;
+  margin: 0;
+  padding: 10px 0 0 20px;
 }
 
 .sobre {
@@ -68,21 +67,22 @@
 }
 .sobre__descriptions h1 {
   font-size: 90px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   color: #4c4ce5;
+  font-size: 60px;
 }
 .sobre__descriptions h2 {
-  font-size: 50px;
+  font-size: 30px;
   margin-bottom: 40px;
   color: #4c4ce5;
 }
 .sobre__descriptions p {
   color: #ccc;
-  font-size: 30px;
+  font-size: 20px;
 }
 .sobre img {
-  margin: 0px 120px 0 5%;
-  height: 900px;
+  margin: 0px 100px;
+  height: 700px;
   border-radius: 7px;
 }
 
@@ -100,6 +100,9 @@
 }
 .shows__list--is-active {
   display: grid;
+}
+.shows__list__item {
+  margin: 60px 60px 60px 0;
 }
 .shows__list__item__homeButton {
   background-color: #f9f9f9;
@@ -134,21 +137,18 @@
   background-color: #fccb51;
   color: #000;
 }
-.shows__list__item p:first-child {
-  font-size: 355px;
-}
-.shows__list__item {
-  margin: 60px 60px 60px 0;
+.shows__list__item p {
+  font-size: 30px;
 }
 .shows__list__item img {
   max-width: 100%;
-  height: 300px;
+  height: 250px;
   border-radius: 4px;
   margin-bottom: 20px;
 }
 .shows__list__item p:last-child {
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 20px;
+  margin-top: 10px;
 }
 .shows__list__games {
   display: grid;
@@ -157,7 +157,7 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-left: 16%;
+  margin-left: 26%;
 }
 .shows__list__games .imageGame {
   width: 550px;
@@ -165,8 +165,7 @@
 .shows__list__games li {
   background-color: #ccc;
   border-radius: 7px;
-  width: 550px;
-  margin: 40px;
+  width: 400px;
 }
 .shows__list__games li p {
   color: #000;
@@ -183,7 +182,7 @@
   border-radius: 7px;
 }
 .shows__list__games .plataformas img {
-  height: 40px;
+  height: 30px;
   margin: 0;
   margin: 0 15px 0 15px;
   padding: 5px;
@@ -191,8 +190,13 @@
 .shows__list__figs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 1500px;
-  margin-left: 12%;
+  text-align: center;
+  margin-top: 40px;
+  gap: 90px;
+  margin-left: 24%;
+}
+.shows__list__figs li {
+  margin-bottom: 15px;
 }
 .shows__list__figs li:hover {
   box-shadow: 0 0 60px #4c3999;
@@ -205,12 +209,13 @@
 }
 .shows__list__figs li p {
   color: #000;
+  font-size: 15px;
 }
 .shows__list__figs li .descFigs {
-  font-size: 45px;
+  font-size: 30px;
 }
 .shows__list__figs li .price {
-  font-size: 35px;
+  font-size: 28px;
   color: #4c3999;
   font-weight: bold;
 }
@@ -340,46 +345,60 @@ body {
   .nav {
     width: 100%;
   }
-  .hero {
+  .nav__container {
+    margin: 0;
+  }
+  .nav__container__list {
+    margin-left: 145px;
+  }
+  .nav__container__list a {
+    width: 65px;
+    font-size: 15px;
+  }
+  .nav__container img {
+    height: 80px;
+  }
+  .hero img {
     background-image: url(../images/hero_mobile.jpg);
-    width: 100%;
+    background-repeat: no-repeat;
   }
   .sobre {
     display: block;
   }
   .sobre img {
-    height: 600px;
+    height: 550px;
     margin: 0;
-    padding: 20px;
+    padding: 30px;
   }
   .sobre__descriptions .tituloh1 {
-    font-size: 70px;
-    text-align: center;
+    font-size: 40px;
+    margin-left: 29px;
     margin-bottom: 10px;
   }
   .sobre__descriptions .tituloh2 {
-    font-size: 14px;
-    margin-left: 23px;
+    font-size: 13px;
+    margin-left: 29px;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 0;
   }
   .sobre__descriptions p {
     margin-left: 30px;
-    font-size: 30px;
+    font-size: 20px;
     width: 170%;
-    line-height: 40px;
+    line-height: 30px;
+  }
+  .shows__tabs__button {
+    font-size: 20px;
   }
   .shows__list {
     grid-template-columns: 1fr;
   }
   .shows__list p:last-child {
-    line-height: 40px;
+    line-height: 35px;
   }
   .shows__list__games {
     grid-template-columns: 1fr;
     margin: 0;
-    padding-right: 80px;
   }
   .shows__list__games li {
     max-width: 350px;
@@ -389,20 +408,26 @@ body {
     margin-left: 50px;
   }
   .shows__list__games li .imageGame {
-    height: 250px;
+    height: 200px;
+  }
+  .shows__list__games li p {
+    font-size: 26px;
   }
   .shows__list__figs {
+    margin: 15px 0 0 0;
+    margin-left: 11%;
     grid-template-columns: 1fr;
-    width: 75%;
   }
-  .shows__list__figs li {
-    padding: 50px;
-    height: 500px;
+  .shows__list__figs__item {
+    width: 80%;
+    padding: 40px;
+    height: 470px;
+    margin: 15px 0 15px 0;
   }
-  .shows__list__figs li img {
+  .shows__list__figs__item img {
     height: 230px;
   }
-  .shows__list__figs li .descFigs {
+  .shows__list__figs__item .descFigs {
     font-size: 26px;
   }
 }

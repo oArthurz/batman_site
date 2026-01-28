@@ -10,8 +10,7 @@
     <header class="nav">
         <div class="nav__container">
             <img src="./src/images/logo_branco.png" alt="">
-            <ul class="nav__container__list">
-                
+            <ul class="nav__container__list">     
                 <a href="#" class="nav__container__list__item--is-active">
                     Assinar
                 </a>
@@ -24,7 +23,10 @@
     </header>
 
     <section class="hero">
-        
+        <img src="./src/images/hero_desktop.jpg" alt="">
+        <picture>
+            <source @media = "(max-width: 768px)" srcset="./src/images/hero_mobile.jpg"/>
+        </picture>
     </section>
 
     <section class="sobre">
@@ -155,15 +157,15 @@
         
         <ul data-tab-id="action_figures_home" class="shows__list">
             <div class="shows__list__figs">
-                <li class="shows__list__item">
+                <li class="shows__list__figs__item">
                     <img src="./src/images/shows/action figures/fig1.jpg" alt="Batman detetive">
-                    <p class="descFigs">Batman McFerlane</p>    
+                    <p class="descFigs">Batman Detetive</p>    
                     <p class="price">R$ 299,00</p>
                     <p>até 10x de 29,90 sem juros</p>
                     <button>Quero Este</button>
                 </li>
 
-                <li class="shows__list__item">
+                <li class="shows__list__figs__item">
                     <img src="./src/images/shows/action figures/fig2.jpg" alt="Batman armadura">
                     <p class="descFigs">Batman Armored</p>
                     <p class="price">R$ 499,00</p>
@@ -171,7 +173,7 @@
                     <button>Quero Este</button>
                 </li>
 
-                <li class="shows__list__item">
+                <li class="shows__list__figs__item">
                     <img src="./src/images/shows/action figures/fig3.jpg" alt="Charada">
                     <p class="descFigs">The Riddler</p>
                     <p class="price">R$ 299,00</p>
@@ -179,7 +181,7 @@
                     <button>Quero Este</button>
                 </li>
 
-                <li class="shows__list__item">
+                <li class="shows__list__figs__item">
                     <img src="./src/images/shows/action figures/fig4.jpg" alt="Batman Dourado">
                     <p class="descFigs">Batman 1989</p>
                     <p class="price">R$ 299,00</p>
@@ -187,7 +189,7 @@
                     <button>Quero Este</button>
                 </li>
 
-                <li class="shows__list__item">
+                <li class="shows__list__figs__item">
                     <img src="./src/images/shows/action figures/fig5.jpg" alt="Batman Vermelho">
                     <p class="descFigs">Batman Platinum</p>
                     <p class="price">R$ 299,00</p>
@@ -195,7 +197,7 @@
                     <button>Quero Este</button>
                 </li>
 
-                <li class="shows__list__item">
+                <li class="shows__list__figs__item">
                     <img src="./src/images/shows/action figures/fig6.jpg" alt="Pinguim">
                     <p class="descFigs">Penguin</p>
                     <p class="price">R$ 399,00</p>
@@ -237,7 +239,7 @@
                 <a href="#" class="text--small">Sobre o Disney+.</a>
             </li>
         </ul>
-        <p class="text--big">© 2026 Todos os direitos reservados, - Arthur Leite</p> 
+        <p class="text--big">© 2026 Todos os direitos reservados - Arthur Leite</p> 
     </footer>
         <script src="./src/main.js"></script>
     </body>

@@ -28,7 +28,7 @@
             &__item
             {
                 color: variaveis.$corDeFundo;
-                background-color: variaveis.$corBatman2;
+                background-color: variaveis.$corTextoPrincipal;
                 text-decoration: none;
                 cursor: pointer;
                 padding: 5px;
@@ -45,7 +45,7 @@
                     color: variaveis.$corDeFundo;
                     padding: 5px;
                     border-radius: 4px;
-                    background-color: variaveis.$corBatman2;
+                    background-color: variaveis.$corTextoPrincipal;
                     border: none;
                     width: 100px;
                     text-align: center;
@@ -59,7 +59,8 @@
         img
         {
             height: 90px;
-            margin: 15px 0 0 25px;
+            margin: 0;
+            padding: 10px 0 0 20px;
         }
     }
 }

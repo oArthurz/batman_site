@@ -85,12 +85,35 @@ body
     .nav
     {
         width: 100%;
+
+        &__container
+        {
+            margin: 0;
+            &__list
+            {
+                margin-left: 145px;
+                a
+                {
+                    width: 65px;
+                    font-size: 15px;
+                }
+            }
+
+            img
+            {
+                height: 80px;
+            }
+
+        }
     }
 
     .hero
     {
-        background-image: url(../images/hero_mobile.jpg);
-        width: 100%;
+        img
+        {
+            background-image: url(../images/hero_mobile.jpg);
+            background-repeat: no-repeat;
+        }
     }
    .sobre
    {
@@ -98,56 +121,63 @@ body
 
         img
         {
-            height: 600px;
+            height: 550px;
             margin: 0;
-            padding: 20px;
+            padding: 30px;
         }
     
         &__descriptions
         {
             .tituloh1
             {
-                font-size: 70px;
-                text-align: center;
+                font-size: 40px;
+                margin-left: 29px;
                 margin-bottom: 10px;
             }
 
             .tituloh2
             {
-                font-size: 14px;
-                margin-left: 23px;
+                font-size: 13px;
+                margin-left: 29px;
                 text-transform: uppercase;
-                text-align: center;
                 margin-bottom: 0;
             }
             p
             {
                 margin-left: 30px;
-                font-size: 30px;
+                font-size: 20px;
                 width: 170%;
-                line-height: 40px;
+                line-height: 30px;
             }
         }
     }
     .shows
     {
+        &__tabs
+        {
+            &__button
+            {
+                font-size: 20px;
+            }
+        }
+
         &__list
         {
             grid-template-columns: 1fr;
             p:last-child
             {
-                line-height: 40px;
+                line-height: 35px;
             }
 
             &__games
             {
                 grid-template-columns: 1fr;
                 margin: 0;
-                padding-right: 80px;
                 li
                 {
                     max-width: 350px;
                     width: 100%;
+
                     .plataformas
                     {
                         margin-left: 50px;
@@ -155,19 +185,28 @@ body
                     
                     .imageGame
                     {
-                        height: 250px;
+                        height: 200px;
+                    }
+
+                    p
+                    {
+                        font-size: 26px;
                     }
                 }
             }
 
             &__figs
             {
+                margin: 15px 0 0 0;
+                margin-left: 11%;
                 grid-template-columns: 1fr;
-                width: 75%;
-                li
+
+                &__item
                 {
-                    padding: 50px;
-                    height: 500px;
+                    width: 80%;
+                    padding: 40px;
+                    height: 470px;
+                    margin: 15px 0 15px 0 ;
                     img
                     {
                         height: 230px;
